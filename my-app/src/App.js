@@ -1,11 +1,23 @@
 import './App.css';
+import Info from './Info.js';
 
 function App() {
   return (
     <div className="App">
-      <p>Clean slate app.</p>
+      <Info />
+      <AddItem />
     </div>
   );
+}
+function AddItem (){
+  const value = "default";
+
+  return(
+    <form>
+      <label for="text-form">Type Something:</label>
+      <input type="text" value={value} id="text-form" />
+    </form>
+  )
 }
 
 export default App;
