@@ -1,5 +1,5 @@
-import './App.css';
-import Info from './Info.js';
+import "./App.css";
+import Info from "./Info.js";
 
 function App() {
   return (
@@ -9,15 +9,15 @@ function App() {
     </div>
   );
 }
-function AddItem (){
+function AddItem() {
   const value = "default";
 
-  return(
+  return (
     <form>
       <label for="text-form">Type Something:</label>
       <input type="text" value={value} id="text-form" />
     </form>
-  )
+  );
 }
 
 export default App;
